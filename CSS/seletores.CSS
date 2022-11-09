@@ -1,0 +1,24 @@
+/* em html é ID = em CSS é # */
+/* em html é class = em CSS é. */
+#principal {
+    text-align:center;
+    color: aquamarine;
+}
+h1 {
+    color: darkslateblue;
+}
+.basico {
+    background-color:brown;
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.intermediario {
+    background-color: brown;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.avancado {
+    background-color:brown;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
