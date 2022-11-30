@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+    <style>
+        body {
+            color: darkslateblue;
+            font-family: cursive;
+            background-color: aquamarine;
+        }
+        .conteudo {
+            text-align: center; 
+            padding: 50px;
+        }
+        h1 {
+            font-size: 80px;
+        }
+        p {
+            font-size: 40px;
+        }
+        #btn {
+            background-color: rgb(143, 15, 143);
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        #barra {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = 'conteudo'>
+    <h1>Sistema de idade</h1>
+    <p>Digite sua idade: <input id = 'barra' type="number" name="txtvel" id="txtvel"></p>
+    <input id = 'btn'type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    </div> 
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector ('div#res')
+            var id = Number (txtv.value)
+            res.innerHTML = `<p>Você tem ${id} anos de idade.</p>`
+            if (id < 18){
+                res.innerHTML += `<p>Você é menor de idade.</p>`
+            }
+            else {
+                res.innerHTML += `<p>Você é maior de idade.`
+            }
+        }
+    </script>
+</body>
+</html>
